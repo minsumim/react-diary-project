@@ -25,3 +25,38 @@
   padding: 10px;
   cursor: pointer;
 }
+
+/* List */
+
+.DiaryList {
+  border : solid 1px gray;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.DiaryList h2 {
+  text-align: center;
+}
+
+/* Item */
+
+.DiaryListItem {
+  background-color: rgb(240, 240, 240);
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.DiaryListItem .info {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.DiaryListItem .date {
+  color: rgb(155, 155, 155);
+}
+
+.DiaryListItem .content {
+  font-weight: bold;
+  margin: 45px 0 30px 0;
+}
