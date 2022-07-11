@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 
-const DiaryEditer = ()=>{
+const DiaryEditer = ({onCreate})=>{
 
     const authorInput = useRef();
     //useRef() => 돔요소를 선택해줌
@@ -30,8 +30,13 @@ const DiaryEditer = ()=>{
             contentTextarea.current.focus();
             return;
         }
-
+        onCreate(state.author, state.content, state.emotion);
         alert('저장 완');
+        setState({
+            author : "",
+            content : "",
+            emotion : 1,
+        })
     }
 
     return(
